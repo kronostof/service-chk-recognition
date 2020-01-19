@@ -1,3 +1,16 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+status:
+    path: /status
+    controller: App\Controller\DefaultController::status
+
+api_login_check:
+    path: /api/login_check
+    methods: POST
+
+image:
+    path: /api/image
+    methods: post
+    controller: App\Controller\DefaultController::image
+
+dev_image:
+    path: /dev/image
+    controller: App\Controller\DefaultController::image
